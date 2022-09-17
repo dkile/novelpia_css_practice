@@ -1,5 +1,7 @@
+import MainLayout from "./layouts";
+
 function App() {
-  return <div></div>;
+  return <MainLayout />;
 }
 
 export default App;
