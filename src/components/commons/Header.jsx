@@ -2,7 +2,15 @@ import { css } from "@emotion/react";
 
 const Header = () => {
   return (
-    <header>
+    <header
+      css={css`
+        position: sticky;
+        display: flex;
+        align-items: center;
+        max-width: 80rem;
+        height: 5.5rem;
+      `}
+    >
       <div>
         <img src="" alt="" />
         <div className="adult-toggle"></div>
