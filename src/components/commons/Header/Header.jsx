@@ -12,8 +12,8 @@ const Header = () => {
       `}
     >
       <div>
-        <img src="" alt="" />
-        <div className="adult-toggle"></div>
+        <img src="https://novelpia-clone.s3.ap-northeast-2.amazonaws.com/image/logo_02.png" />
+        <AdultSwitch />
       </div>
       <div className="header-novel-nav"></div>
       <div className="header-profile-nav"></div>
