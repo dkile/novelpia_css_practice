@@ -4,7 +4,7 @@ const MainLayout = (props) => {
   return (
     <div>
       <Header />
-      <body>{props.childeren}</body>
+      <section>{props.childeren}</section>
       <Footer />
     </div>
   );
