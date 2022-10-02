@@ -1,5 +1,7 @@
 import { css } from "@emotion/react";
 
+import AdultSwitch from "./AdultSwitch";
+
 const Header = () => {
   return (
     <header
