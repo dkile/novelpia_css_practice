@@ -7,7 +7,6 @@ const AdultSwitch = () => {
   const [adultToggle, setAdultToggle] = useState(false);
 
   const handleAdultToggle = () => {
-    console.log(adultToggle);
     setAdultToggle(!adultToggle);
   };
 
