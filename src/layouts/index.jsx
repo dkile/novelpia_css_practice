@@ -1,13 +1,19 @@
+import { css } from "@emotion/react";
+
 import { Header, Footer } from "../components/commons";
 
-const MainLayout = (props) => {
+const Layout = (props) => {
+  const mainCss = css`
+    width: 100%;
+  `;
+
   return (
-    <div>
+    <>
       <Header />
-      <section>{props.childeren}</section>
+      <main css={mainCss}>{props.children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default MainLayout;
+export default Layout;
