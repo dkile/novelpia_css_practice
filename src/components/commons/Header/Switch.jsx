@@ -7,20 +7,23 @@ const Switch = ({ checked, handleChecked }) => {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 4rem;
+    border-radius: 6.4rem;
     background-color: #cfcfcf;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &::before {
       content: "19";
-      font-size: 11px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #9c9c9c;
       position: absolute;
-      top: 0.22rem;
-      left: 0.22rem;
-      width: 1rem;
-      height: 1rem;
-      border-radius: 0.7rem;
+      top: 0.3rem;
+      left: 0.3rem;
+      padding-left: 0.2rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 1.4rem;
       background-color: #fff;
-      transition: all 0.4s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   `;
 
@@ -28,7 +31,8 @@ const Switch = ({ checked, handleChecked }) => {
     ${slider};
     background-color: #7732ff;
     &::before {
-      transform: translateX(1.25rem);
+      transform: translateX(2rem);
+      color: #7732ff;
     }
   `;
 
@@ -38,23 +42,25 @@ const Switch = ({ checked, handleChecked }) => {
     left: 0;
     width: 100%;
     height: 100%;
-    font-size: 11px;
+    font-size: 1.1rem;
     font-family: sans-serif;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &::after {
       content: attr(data-off);
+      font-weight: 600;
       position: absolute;
-      top: 0.2rem;
-      right: 0.2rem;
+      top: 0.4rem;
+      right: 0.4rem;
       color: #9c9c9c;
       opacity: 1;
       transition: all 0.3s ease-in-out;
     }
     &::before {
       content: attr(data-on);
+      font-weight: 600;
       position: absolute;
-      top: 0.2rem;
-      left: 0.2rem;
+      top: 0.4rem;
+      left: 0.4rem;
       color: #fff;
       opacity: 0;
       transition: all 0.3s ease-in-out;
@@ -76,19 +82,13 @@ const Switch = ({ checked, handleChecked }) => {
       css={css`
         position: relative;
         display: inline-block;
-        width: 2.75rem;
-        height: 1.5rem;
-        border-radius: 4rem;
+        width: 4.4rem;
+        height: 2.4rem;
+        border-radius: 6.4rem;
         cursor: pointer;
       `}
       onClick={handleChecked}
     >
-      <input
-        css={css`
-          display: none;
-        `}
-        type="checkbox"
-      />
       <span css={checked ? checkedSlider : slider}></span>
       <span
         css={checked ? checkedSwitchLabel : switchLabel}
